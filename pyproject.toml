@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cltpj"
+version = "0.1.0"
+description = "Cálculo aproximado de salário líquido CLT x PJ"
+authors = ["Nilo Menezes <nilo@nilo.pro.br>"]
+license = "GPL 3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.7.1"
+scipy = "^1.14.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.7"
+mypy = "^1.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
