@@ -9,6 +9,12 @@ Como é uma estimativa, vários detalhes foram simplificados:
 - Vale transporte
 - Vale refeição
 
+# Instalando
+
+```
+pip install cltpj
+```
+
 # Usando
 
 Versão interativa:
