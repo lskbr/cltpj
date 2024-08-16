@@ -8,7 +8,6 @@ Como é uma estimativa, vários detalhes foram simplificados:
 
 - Vale transporte
 - Vale refeição
-- Benefícios
 
 # Usando
 
@@ -147,6 +146,19 @@ Um faturamento PJ Simples R$   10,000.00 equivale a salário CLT R$    8,464.00
     Benefícios           +       994.89
                          ==============
     Líquido + Benefícios       5,130.59
+```
+
+Exemplo com dependentes:
+
+```
+>>> from cltpj import CLT
+>>> for d in range(5): print(repr(CLT(salario=10_000, dependentes=d)))
+...
+<CLT salário=10000 mensal=9523.898118680556>
+<CLT salário=10000 mensal=9567.345827013889>
+<CLT salário=10000 mensal=9610.793535347222>
+<CLT salário=10000 mensal=9654.241243680555>
+<CLT salário=10000 mensal=9697.688952013888>
 ```
 
 # Calculando os impostos sobre o faturamento como PJ Simples

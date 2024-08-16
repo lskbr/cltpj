@@ -24,7 +24,7 @@ IMPOSTO_DE_RENDA: TIPO_TABELA_FAIXA = [
 
 # Desconto do IRPF por dependente
 # https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/imposto-de-renda/dirpf/deducoes/29-despesa-com-dependente
-DESCONTO_IR_POR_DEPENDENTE = 2_275.08
+DESCONTO_IR_POR_DEPENDENTE = 2_275.08 / 12  # Converte a redução anual para mensal
 
 # Seguro Social - INSS
 # https://www.gov.br/inss/pt-br/direitos-e-deveres/inscricao-e-contribuicao/tabela-de-contribuicao-mensal

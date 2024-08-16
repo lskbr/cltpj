@@ -15,7 +15,8 @@ class PJSimples:
         self,
         faturamento: float,
         prolabore: float = MIN_INSS,
-        contador=CUSTO_CONTADOR_DEFAULT,
+        contador: float = CUSTO_CONTADOR_DEFAULT,
+        dependentes: int = 0,
     ):
         self.faturamento = faturamento
         self.faturamento_anual = faturamento * 12
@@ -33,7 +34,9 @@ class PJSimples:
         self.despesas = self.contador + self.prolabore
 
         self.base_ir_prolabore = self.prolabore - self.prolabore_inss
-        self.ir_prolabore = imposto_de_renda_pessoa_fisica(self.base_ir_prolabore)
+        self.ir_prolabore = imposto_de_renda_pessoa_fisica(
+            self.base_ir_prolabore, dependentes=dependentes
+        )
 
         self.socio_liquido = self.prolabore - self.prolabore_inss - self.ir_prolabore
 
